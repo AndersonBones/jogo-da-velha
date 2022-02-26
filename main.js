@@ -4,7 +4,7 @@ let restart_btn = document.querySelector(".reset-btn");
 restart_btn.addEventListener("click", restart)
 
 for(var square of square_list){
-    square.addEventListener('click', set_square);
+    square.addEventListener('click', Set_square);
 
 }
 
@@ -18,10 +18,7 @@ function Show_square(square_value, square){
 }
 
 var Player_pos = 0; // posição do emoji na lista squareValues
-function set_square(){
-
-    let squareValues = ['&#11093;','&#10060;'];
-
+function Set_player_pos(){ 
     // define uma jogada por vez para cada player
     if(Player_pos == 0){ 
         Player_pos = 1;
@@ -29,8 +26,14 @@ function set_square(){
     else{
         Player_pos = 0;
     }
+}
 
-    let square_value = squareValues[Player_pos]; // emoji do player da vez
+var Player_pos = 0; // posição do emoji na lista squareValues
+function Set_square(){ // define a vez de cada player
+
+    let squareValues = ['&#11093;','&#10060;'];
+    
+    let square_value = squareValues[Player_pos]; // define o emoji do player da vez
 
     Show_square(square_value, this); // mostra o emoji da vez
     
