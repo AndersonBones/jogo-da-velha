@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Velha</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <script src="./main.js" defer></script>
+    </head>
+    <body>
+
+        <main>
+
+            <h2>Jogo da Velha</h2>
+            <div class="tabuleiro">
+                <div data-position_row="0" class="row">
+                    <button data-position_player="0" class="player"></button>
+                    <button data-position_player="1" class="player"></button>
+                    <button data-position_square="2" class="player"></button>
+                </div>
+
+                <div data-position_row="1" class="row">
+                    <button data-position_player="0" class="player"></button>
+                    <button data-position_player="1" class="player"></button>
+                    <button data-position_player="2" class="player"></button>
+                </div>
+                
+                <div data-position_row="2" class="row">
+                    <button data-position_player="0" class="player"></button>
+                    <button data-position_player="1" class="player"></button>
+                    <button data-position_player="2" class="player"></button>
+                </div>
+            </div>
+
+            <div class="reset-container">
+                <button class="reset-btn">Reiniciar</button>
+            </div>
+            
+        </main>
+
+        <div class="game_over">
+            <h1>FIM DE JOGO</h1>
+        </div>
+        
+    </body>
+</html>
