@@ -1,4 +1,4 @@
-# JOGO DA VELHA
+# 🎮 JOGO DA VELHA
 
 <img src="./animação.gif">
 
