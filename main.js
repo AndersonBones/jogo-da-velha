@@ -95,6 +95,14 @@ function Check_equality(row_position, square_position){
 
 function game_over(){ // mostra a mensagem de "fim de jogo"
     document.querySelector('.game_over').classList.add('active');
+    
+    if(Player_pos == 0){
+        
+       alert('Jogador "X" Venceu!')
+    }else{
+        
+        alert('Jogardor "0" Venceu!')
+     }
 
     setTimeout(()=>{
         restart();
